@@ -1,0 +1,426 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+.event-calendar {
+  display: flex;
+  padding: 20px;
+}
+.featured-event {
+  background-color: #f0f4f8;
+  padding: 20px;
+  width: 60%;
+}
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+.month {
+  font-size: 14px;
+  color: #666;
+}
+.day {
+  font-size: 36px;
+  color: #1f3251;
+}
+.event-details {
+  margin-left: 20px;
+}
+.more-link {
+  color: #007bff;
+  text-decoration: none;
+}
+.event-list {
+  width: 40%;
+  overflow-y: auto;
+  max-height: 400px;
+}
+.event-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+.event-item:last-child {
+  border-bottom: none;
+}
+.event-date-small {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  padding: 10px;
+  width: 80px;
+  margin-right: 15px;
+}
+.day-small {
+  font-size: 32px;
+  color: #c00;
+}
+.month-small {
+  font-size: 12px;
+  color: #666;
+}
+.duration-small {
+  font-size: 10px;
+  color: #666;
+}
+.event-info h3 {
+  margin-top: 0;
+  color: #1f3251;
+  font-size: 18px;
+}
+.location {
+  color: #f47c7c;
+  font-size: 14px;
+}
+.type {
+  background-color: #f4f4f4;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-right: 5px;
+  display: inline-block;
+}
+.all-events-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.day {
+  font-size: 36px;
+  color: #1f3251;
+}
+.event-details {
+  margin-left: 20px;
+}
+.more-link {
+  color: #007bff;
+  text-decoration: none;
+}
+.event-list {
+  width: 40%;
+  overflow-y: auto;
+  max-height: 400px;
+}
+.event-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+.event-item:last-child {
+  border-bottom: none;
+}
+.event-date {
+  display: inline-block;
+  margin-right: 10px;
+}
+.duration {
+  font-size: 12px;
+  color: #666;
+}
+.event-info h3 {
+  margin-top: 0;
+  color: #1f3251;
+}
+.location {
+  color: #f47c7c;
+}
+.type {
+  background-color: #f4f4f4;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+@import url('index.css');
+.carousel-inner{
+  display: flex;
+  flex-wrap:wrapq;
+  gap: 10px;
+}
+.carousel-item{
+  flex:1 0 auto;
+  position: relative; 
+}
+.carousel-item img{
+  width:100%;
+  height:auto;
+}
+.carousel-caption {
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  padding: 10px; 
+  text-align: center; 
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+.main-event {
+  display: flex;
+  align-items: center;
+  background-color: #ecf0f1;
+  padding: 40px;
+  margin-bottom: 20px;
+  width: 60%;
+  float: left;
+}
+
+.event-date {
+  border: 1px solid #bdc3c7;
+  padding: 10px;
+  text-align: center;
+}
+
+.month {
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.days {
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+.event-info {
+  margin-left: 20px;
+}
+
+h2 {
+  color: #2c3e50;
+}
+
+.more-link {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.event-location {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: #2c3e50;
+}
+
+.event-location i {
+  margin-right: 5px;
+}
+
+.event-list {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  float: right;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ecf0f1;
+  padding: 10px 0;
+}
+
+.event-date {
+  width: 100px;
+  text-align: center;
+}
+
+.event-date .day {
+  font-size: 24px;
+  color: #e74c3c;
+}
+
+.event-date .month {
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.event-date .duration {
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.event-details {
+  margin-left: 20px;
+}
+
+h3 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.event-type {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.all-events-link {
+  display: block;
+  text-align: center;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  clear: both;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+.main-event {
+  display: flex;
+  align-items: center;
+  background-color: #ecf0f1;
+  padding: 40px;
+  margin: 20px auto;
+  width: 60%;
+}
+
+.event-date {
+  border: 1px solid #bdc3c7;
+  padding: 10px;
+  text-align: center;
+}
+
+.month {
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.days {
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+.event-info {
+  margin-left: 20px;
+}
+
+h2 {
+  color: #2c3e50;
+}
+
+.more-link {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.event-location {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: #2c3e50;
+}
+
+.event-location i {
+  margin-right: 5px;
+}
+
+.event-list {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin: 20px auto;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ecf0f1;
+  padding: 10px;
+}
+
+.event-date {
+  width: 100px;
+  text-align: center;
+}
+
+.event-date .day {
+  font-size: 24px;
+  color: #e74c3c;
+}
+
+.event-date .month {
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.event-date .duration {
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.event-details {
+  margin-left: 20px;
+}
+
+h3 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.event-type {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.all-events-link {
+  display: block;
+  text-align: center;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin: 20px auto;
+  width: 200px;
+}
